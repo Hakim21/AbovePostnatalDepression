@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent">
+    <stroke android:width="3dp"
+        android:color="#d9a2f1" />
+
+    <corners android:radius="25dp" />
+
+    <gradient android:angle="270"
+        android:centerColor="#9434be"
+        android:endColor="#d9a2f1"
+        android:startColor="#d9a2f1" />
+</shape>

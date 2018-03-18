@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Search / will display always -->
+<!--
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/action_bar_popup_menu_purple"
+        app:showAsAction="ifRoom"
+        android:title="Search"/>
+
+    &lt;!&ndash; Location Found &ndash;&gt;
+    <item
+        android:id="@+id/action_location_found"
+        android:icon="@drawable/action_bar_popup_menu_purple"
+        app:showAsAction="ifRoom"
+        android:title="Location found"/>
+-->
+
+    <!-- More -->
+    <item
+        android:id="@+id/a_More"
+        android:icon="@drawable/action_bar_popup_menu_purple"
+        app:showAsAction="ifRoom"
+        android:title="More">
+        <menu>
+
+            <!-- Refresh -->
+            <item
+                android:id="@+id/action_refresh"
+                android:icon="@drawable/action_bar_popup_menu_purple"
+                app:showAsAction="never"
+                android:title="Refresh"/>
+
+            <!-- Help -->
+            <item
+                android:id="@+id/action_help"
+                android:icon="@drawable/action_bar_popup_menu_purple"
+                app:showAsAction="never"
+                android:title="Help"/>
+
+            <!-- Check updates -->
+            <item
+                android:id="@+id/action_check_updates"
+                android:icon="@drawable/action_bar_popup_menu_purple"
+                app:showAsAction="never"
+                android:title="Check Updates"/>
+
+            <!-- Check updates -->
+            <item
+                android:id="@+id/newTreatment"
+                android:icon="@drawable/action_bar_popup_menu_purple"
+                app:showAsAction="never"
+                android:title="New Treatment"
+                />
+
+            <item
+                android:id="@+id/newRegistration"
+                android:icon="@drawable/action_bar_popup_menu_purple"
+                app:showAsAction="never"
+                android:title="Register New User"
+                />
+        </menu>
+    </item>
+
+</menu>
+

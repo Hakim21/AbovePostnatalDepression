@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.abovepostnataldepression.Register">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="784dp"
+        android:layout_height="64dp"
+        android:background="#d9a2f1"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text = "@string/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/welcome_text"
+        android:textSize = "25sp"
+        android:textColor = "#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <TextView
+        android:text = "@string/signup_with_username"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/login_instruction"
+        android:layout_below = "@id/welcome_text"
+        android:textColor = "#000"
+        android:textSize = "25sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:text="@string/textView_OR"
+        android:id="@+id/textView_OR"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textColor = "#000"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@+id/login_instruction"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/signup_with_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_button_facebook"
+        android:text="@string/signup_with_facebook"
+        android:layout_marginTop="27dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView_OR"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/signup_with_google" />
+
+    <Button
+        android:id="@+id/signup_with_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_button_google"
+        android:text="@string/signup_with_google"
+        android:layout_marginTop="27dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView_OR"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/signup_with_facebook" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height = "wrap_content"
+        android:id="@+id/RegisterUsername"
+        app:layout_constraintTop_toBottomOf="@+id/signup_with_facebook"
+        android:textSize="25sp"
+        android:text="Username"
+        android:layout_gravity="center"
+        android:textColor = "#000"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/AbovePNDUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_OR"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-42dp"
+        android:textColorHighlight="#d9a2f1"
+        android:textColorHint="#f0edf2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterUsername" />
+
+    <TextView
+        android:layout_width="784dp"
+        android:layout_height = "wrap_content"
+        android:id="@+id/RegisterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/AbovePNDUsername"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:text=" Password"
+        android:textColor = "#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <EditText
+        android:id="@+id/AbovePNDPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_OR"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:textColorHighlight="#d9a2f1"
+        android:textColorHint="#f0edf2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterPassword" />
+
+    <TextView
+        android:layout_width="784dp"
+        android:layout_height = "wrap_content"
+        android:id="@+id/RegisterConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/AbovePNDPassword"
+        android:textSize="25sp"
+        android:text=" Confirm Password"
+        android:layout_gravity="center"
+        android:textColor = "#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <EditText
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/AbovePNDConfirmPassword"
+        android:inputType="textPassword"
+        android:hint = " Confirm Password"
+        android:textColorHighlight = "#d9a2f1"
+        android:textColorHint = "#f0edf2"
+        android:layout_below="@+id/textView_OR"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterConfirmPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button"
+        android:onClick="onClick"
+        android:text="@string/register_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cancel_button" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/cancel_button"
+        app:layout_constraintLeft_toRightOf="@+id/register_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="37dp"
+        android:layout_gravity="center"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

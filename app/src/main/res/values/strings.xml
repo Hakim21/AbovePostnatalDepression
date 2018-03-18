@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AbovePostnatalDepression</string>
+    <string name="welcome_text">Welcome to AbovePND</string>
+    <string name="signup_with_username">Sign up</string>
+    <string name="signup_with_facebook">Facebook</string>
+    <string name="signup_with_google">Google</string>
+    <string name="textView_OR">OR</string>
+    <string name="login_attempts">New Text</string>
+    <string name="login_button">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="register_button">Register</string>
+    <string name="title_activity_above_pndactivities">abovePNDactivities</string>
+    <string name="title_activity_view_treatment_details">view_treatment_details</string>
+    <string name="title_activity_add_treatment">add_treatment</string>
+</resources>
